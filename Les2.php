@@ -43,6 +43,34 @@
 	case 14:
 		echo 14;
 	case 15:
-		echo 15;
+		echo "15<hr>";
   }                // Задание 2
+  
+  function sum($q, $w){
+	  return $q+$w;
+  }
+  function mult($q, $w){
+	  return $q*$w;
+  }
+  function sub($q, $w){
+	  return $q-$w;
+  }
+  function div($q, $w){
+	  return $q/$w;
+  }
+  
+
+	
+  function mathOperation($a1, $a2, $oper){
+	  switch($oper){
+		case sum:
+			$a1+$a2;
+			break;
+		case sub:
+			$a1-$a2;
+			break;
+	  }
+  }		
+	echo mathOperation(5, 10, sum);
+  
  ?>
