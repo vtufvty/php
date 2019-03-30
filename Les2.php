@@ -57,20 +57,26 @@
   }
   function div($q, $w){
 	  return $q/$w;
-  }
+  }                      //3 задание
   
 
 	
   function mathOperation($a1, $a2, $oper){
 	  switch($oper){
-		case sum:
-			$a1+$a2;
+		case "+":
+			echo sum($a1, $a2);
 			break;
-		case sub:
-			$a1-$a2;
+		case "-":
+			echo sub($a1, $a2);
 			break;
+		case "*":
+			echo mult($a1, $a2);
+			break;
+		case "/":
+			echo div($a1, $a2);
+			break;	
 	  }
   }		
-	echo mathOperation(5, 10, sum);
+	echo mathOperation(12, 4, "*"); //4 задание
   
  ?>
