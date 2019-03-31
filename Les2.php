@@ -77,6 +77,15 @@
 			break;	
 	  }
   }		
-	echo mathOperation(12, 4, "*"); //4 задание
-  
+	echo mathOperation(12, 5, "*");	//4 задание
+	
+	echo "<hr>";
+	
+	function power($val, $pow){
+		if ($pow != 0){
+			return $val * power($val, $pow - 1);
+		}
+			return 1;
+	}
+	 echo power(3, 3);  // 6 задание
  ?>
